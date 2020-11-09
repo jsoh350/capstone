@@ -5,7 +5,7 @@ class Sentence(models.Model):
     user_email = models.CharField(max_length=200)
     input_type = models.IntegerField(default=0)
     typing_speed = models.IntegerField(default=0)
-    total_move = models.IntegerField(default=0)
+    total_move = models.FloatField(default=0)
     accuracy = models.FloatField(default=0)
     erased_letter = models.CharField(max_length=10)
     score = models.IntegerField(default=0)
